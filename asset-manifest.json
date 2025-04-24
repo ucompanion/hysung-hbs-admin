@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hysung-hbs-admin/static/css/main.8a71b842.css",
-    "main.js": "/hysung-hbs-admin/static/js/main.ba1aad1a.js",
+    "main.js": "/hysung-hbs-admin/static/js/main.25d96f74.js",
     "static/js/453.20aaa1f9.chunk.js": "/hysung-hbs-admin/static/js/453.20aaa1f9.chunk.js",
     "static/media/icn-14-demo-info-wh.svg": "/hysung-hbs-admin/static/media/icn-14-demo-info-wh.297da4dd31246697a9b6.svg",
     "static/media/icn-16-demo-info-gr.svg": "/hysung-hbs-admin/static/media/icn-16-demo-info-gr.d0d05c44e3a433b41f42.svg",
@@ -17,11 +17,11 @@
     "static/media/icn-14-demo-popover-arw.svg": "/hysung-hbs-admin/static/media/icn-14-demo-popover-arw.efb680f8a60c32b9234a.svg",
     "static/media/icn-16-demo-select-arw.svg": "/hysung-hbs-admin/static/media/icn-16-demo-select-arw.6a2b5229c6741516dff8.svg",
     "main.8a71b842.css.map": "/hysung-hbs-admin/static/css/main.8a71b842.css.map",
-    "main.ba1aad1a.js.map": "/hysung-hbs-admin/static/js/main.ba1aad1a.js.map",
+    "main.25d96f74.js.map": "/hysung-hbs-admin/static/js/main.25d96f74.js.map",
     "453.20aaa1f9.chunk.js.map": "/hysung-hbs-admin/static/js/453.20aaa1f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8a71b842.css",
-    "static/js/main.ba1aad1a.js"
+    "static/js/main.25d96f74.js"
   ]
 }
