@@ -59,9 +59,9 @@ const AdminLayout = () => {
 				</div>
 			</main>
 
-			<footer className="page-footer bg-light text-center py-3 mt-4">
+			{/* <footer className="page-footer bg-light text-center py-3 mt-4">
 				© 2025 MyApp. All rights reserved.
-			</footer>
+			</footer> */}
 		</div>
 	);
 }
