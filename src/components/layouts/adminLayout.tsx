@@ -9,56 +9,59 @@ const AdminLayout = () => {
 		<div className='page-wrapper'>
 			<header className='page-header'>
 				<Navbar bg="dark" variant="dark" expand="lg">
-					<Container>
+					<Container fluid>
 						<Navbar.Brand href="#">효성HBS</Navbar.Brand>
 						<Button
-							variant="outline-light"
+							variant="dark"
 							onClick={() => setIsSidebarOpen(prev => !prev)}
-							aria-controls="admin-sidebar"
+							aria-controls="sidebar"
 							aria-expanded={isSidebarOpen}
-							className="me-2"
+							className="navbar-toggler"
 						>
-							버튼
+							<span className='navbar-toggler-icon'></span>
 						</Button>
 					</Container>
 				</Navbar>
 			</header>
 
 			<main className="page-body">
-				<Container fluid className='page-container'>
-					{/* 사이드바 */}
-					<Collapse in={isSidebarOpen} dimension="width" className='sidenav'>
-						<Col
-							id="sidebar"
-							xs={12}
-							md={3}
-							lg={2}
-							className="bg-light border-end p-0"
-						>
-							<ListGroup variant="flush">
-								<ListGroup.Item action href="#dashboard">
-									Dashboard
-								</ListGroup.Item>
-								<ListGroup.Item action href="#analytics">
-									Analytics
-								</ListGroup.Item>
-								<ListGroup.Item action href="#orders">
-									Orders
-								</ListGroup.Item>
-								<ListGroup.Item action href="#products">
-									Products
-								</ListGroup.Item>
-								<ListGroup.Item action href="#settings">
-									Settings
-								</ListGroup.Item>
-							</ListGroup>
-						</Col>
-					</Collapse>
+				<div className="page-container">
+					<Container fluid>
+						{/* 사이드바 */}
+						<Collapse in={isSidebarOpen}>
+							<Col
+								id="sidebar"
+								className="bg-light border-end p-0 sidenav"
+							>
+								<ListGroup variant="flush">
+									<ListGroup.Item action href="#dashboard">
+										Dashboard
+									</ListGroup.Item>
+									<ListGroup.Item action href="#analytics">
+										Analytics
+									</ListGroup.Item>
+									<ListGroup.Item action href="#orders">
+										Orders
+									</ListGroup.Item>
+									<ListGroup.Item action href="#products">
+										Products
+									</ListGroup.Item>
+									<ListGroup.Item action href="#settings">
+										Settings
+									</ListGroup.Item>
+								</ListGroup>
+							</Col>
+						</Collapse>
 
-					{/* 메인 패널 */}
-					<Outlet />
-				</Container>
+						{/* 메인 패널 */}
+						<Outlet />
+					</Container>
+				</div>
 			</main>
+
+			<footer className="page-footer bg-light text-center py-3 mt-4">
+				© 2025 MyApp. All rights reserved.
+			</footer>
 		</div>
 	);
 }
